@@ -15,7 +15,10 @@
     --tech-panel: #1E293B;
     /* Panel Color */
     --text-light: #F8FAFC;
-    --text-muted: #94A3B8;
+    --text-muted: #CBD5E1;
+    /* Brightened from #94A3B8 */
+    --gray: #CBD5E1;
+    /* Defined missing variable */
     --text-dark: #0F172A;
     /* For light backgrounds */
     --white: #ffffff;
