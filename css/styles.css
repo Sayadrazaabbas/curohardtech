@@ -1501,6 +1501,14 @@ a.btn {
         gap: 15px;
     }
 
+    .nav-content-wrapper.mobile-active .btn {
+        width: 100%;
+        text-align: center;
+        color: #ffffff !important;
+        /* Force visibility */
+        opacity: 1 !important;
+    }
+
     @keyframes slideDown {
         from {
             opacity: 0;
