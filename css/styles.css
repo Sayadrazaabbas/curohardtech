@@ -1460,6 +1460,11 @@ a.btn {
         display: none;
     }
 
+    .nav-container {
+        justify-content: space-between;
+        /* Fix layout: Logo Left, Toggle Right */
+    }
+
     /* Hide desktop elements on mobile to prevent FOUC / Overlap */
     .nav-buttons,
     .nav-links {
