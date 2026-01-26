@@ -1515,7 +1515,12 @@ a.btn {
         text-align: center;
         color: #ffffff !important;
         /* Force visibility */
+        background: var(--gradient-primary) !important;
+        /* Force Orange Gradient */
         opacity: 1 !important;
+        border: none !important;
+        display: block;
+        /* Ensure it takes width */
     }
 
     @keyframes slideDown {
