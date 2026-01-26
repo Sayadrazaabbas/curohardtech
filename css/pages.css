@@ -23,6 +23,10 @@
     background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.95)), url('../images/drone-three.jpg') no-repeat center center/cover;
 }
 
+.drone-hero {
+    background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.95)), url('../images/drone14.jpg') no-repeat center center/cover;
+}
+
 .page-hero::before {
     content: '';
     position: absolute;
