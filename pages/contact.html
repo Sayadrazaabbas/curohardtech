@@ -11,6 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Rajdhani:wght@400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/pages.css">
     <link rel="icon" type="image/png" href="../images/logo.png">
 </head>
 
@@ -49,10 +50,11 @@
     </header>
 
     <!-- Page Header with Banner -->
-    <section class="page-header contact-hero contact-banner">
+    <!-- Page Hero -->
+    <section class="page-hero contact-hero">
         <div class="container">
-            <h1>Let's Build Something <span class="highlight">Amazing</span> Together</h1>
-            <p>Get a response within 24 hours • Premium STEM Education Solutions</p>
+            <h1 class="page-title">Let's Build Something <span class="highlight">Amazing</span> Together</h1>
+            <p class="page-subtitle">Get a response within 24 hours • Premium STEM Education Solutions</p>
             <div class="breadcrumb">
                 <a href="../index.html">Home</a> <span>/</span> <span>Contact Us</span>
             </div>
@@ -72,50 +74,51 @@
         </div>
     </section>
 
-    <!-- Contact Section (Curopenta Style - Light Theme) -->
-    <section class="section contact-section-light">
+    <!-- Contact Section (Dark Theme) -->
+    <section class="section contact-section">
         <div class="container">
-            <div class="contact-grid-light">
+            <div class="contact-grid">
                 <!-- Contact Info -->
-                <div class="contact-info-light">
+                <div class="contact-info">
                     <h3>Get in Touch</h3>
-                    <p class="contact-intro">
+                    <p>
                         Bharat Robotics LAB is a leading provider of comprehensive STEM education solutions.
                         We deliver innovative robotics, AI, and coding programs for K-12 schools aligned with NEP 2020.
                     </p>
-                    <p class="contact-highlight">
+                    <p
+                        style="color: #94a3b8; margin-bottom: 30px; border-left: 4px solid var(--primary-color); padding-left: 15px;">
                         <strong>Why Choose Us?</strong> Premium quality curriculum, hands-on learning kits, and
                         dedicated teacher training across India.
                     </p>
 
                     <div class="contact-details">
-                        <div class="contact-detail-item">
-                            <div class="detail-icon">📞</div>
-                            <div class="detail-content">
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div>
                                 <h4>Phone Number</h4>
                                 <p><a href="tel:+919930586552">+91 99305 86552</a></p>
                             </div>
                         </div>
 
-                        <div class="contact-detail-item">
-                            <div class="detail-icon">✉️</div>
-                            <div class="detail-content">
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <div>
                                 <h4>Email Address</h4>
                                 <p><a href="mailto:razaabbascnc@gmail.com">razaabbascnc@gmail.com</a></p>
                             </div>
                         </div>
 
-                        <div class="contact-detail-item">
-                            <div class="detail-icon">🕒</div>
-                            <div class="detail-content">
+                        <div class="contact-item">
+                            <div class="contact-icon">🕒</div>
+                            <div>
                                 <h4>Business Hours</h4>
                                 <p>Mon - Sat: 9:00 AM - 6:00 PM<br>Sunday: Closed</p>
                             </div>
                         </div>
 
-                        <div class="contact-detail-item">
-                            <div class="detail-icon">📍</div>
-                            <div class="detail-content">
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
                                 <h4>Office Address</h4>
                                 <p>Workshop No 7/A Moti Chawl, Arab Lane, Nagpada, Mumbai – 400008, Maharashtra, India.
                                 </p>
@@ -124,63 +127,67 @@
                     </div>
 
                     <!-- Map Inside Contact Info -->
-                    <div class="contact-map">
+                    <div class="contact-map" style="margin-top: 30px;">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.7024478926497!2d72.82330598055981!3d18.96272872393359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cf26d9a6e1a5%3A0x8c3f8f1e7a5b8f2a!2sNagpada%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1706291200000!5m2!1sen!2sin"
-                            width="100%" height="270" style="border:0; border-radius: 12px;" allowfullscreen=""
-                            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                            width="100%" height="270"
+                            style="border:0; border-radius: 12px; filter: invert(90%) hue-rotate(180deg);"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
                     </div>
                 </div>
 
-                <!-- Contact Form (Light Theme) -->
-                <div class="contact-form-light">
-                    <h3>Send us a Message</h3>
-                    <p>Fill out the form below and we'll get back to you within 24 hours.</p>
+                <!-- Contact Form (Dark Theme) -->
+                <div class="contact-form-container">
+                    <div class="contact-form">
+                        <h3>Send us a Message</h3>
+                        <p>Fill out the form below and we'll get back to you within 24 hours.</p>
 
-                    <form action="https://formsubmit.co/razaabbascnc@gmail.com" method="POST">
-                        <input type="hidden" name="_subject" value="New Contact Form Submission - Bharat Robotics LAB">
-                        <!-- <input type="hidden" name="_cc"
-                            value="raza.bharatrobotics@gmail.com,askari.bharatrobotics@gmail.com"> -->
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_template" value="table">
+                        <form action="https://formsubmit.co/razaabbascnc@gmail.com" method="POST">
+                            <input type="hidden" name="_subject"
+                                value="New Contact Form Submission - Bharat Robotics LAB">
+                            <!-- <input type="hidden" name="_cc"
+                                value="raza.bharatrobotics@gmail.com,askari.bharatrobotics@gmail.com"> -->
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
 
-                        <div class="form-group">
-                            <label for="name">Full Name *</label>
-                            <input type="text" name="name" id="name" required placeholder="Enter your full name">
-                        </div>
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" name="name" id="name" required placeholder="Enter your full name">
+                            </div>
 
-                        <div class="form-group">
-                            <label for="email">Email Address *</label>
-                            <input type="email" name="email" id="email" required placeholder="Enter your email">
-                        </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" name="email" id="email" required placeholder="Enter your email">
+                            </div>
 
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" name="phone" id="phone" placeholder="+91 98765 43210">
-                        </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" name="phone" id="phone" placeholder="+91 98765 43210">
+                            </div>
 
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <select name="subject" id="subject">
-                                <option value="General Inquiry">General Inquiry</option>
-                                <option value="Book a Demo">Book a Demo</option>
-                                <option value="School Partnership">School Partnership</option>
-                                <option value="Teacher Training">Teacher Training</option>
-                                <option value="Products & Kits">Products & Kits</option>
-                                <option value="Other">Other</option>
-                            </select>
-                        </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <select name="subject" id="subject">
+                                    <option value="General Inquiry">General Inquiry</option>
+                                    <option value="Book a Demo">Book a Demo</option>
+                                    <option value="School Partnership">School Partnership</option>
+                                    <option value="Teacher Training">Teacher Training</option>
+                                    <option value="Products & Kits">Products & Kits</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
 
-                        <div class="form-group">
-                            <label for="message">Your Message *</label>
-                            <textarea name="message" id="message" rows="5" required
-                                placeholder="Tell us about your requirements..."></textarea>
-                        </div>
+                            <div class="form-group">
+                                <label for="message">Your Message *</label>
+                                <textarea name="message" id="message" rows="5" required
+                                    placeholder="Tell us about your requirements..."></textarea>
+                            </div>
 
-                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
-                        <p class="form-note">🔒 Your information is secure and will never be shared.</p>
-                    </form>
+                            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                            <p class="form-note">🔒 Your information is secure and will never be shared.</p>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
