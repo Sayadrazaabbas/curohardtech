@@ -23,10 +23,10 @@
             </a>
             <ul class="nav-links">
                 <li><a href="../index.html" class="nav-link">Home</a></li>
-                <li><a href="../index.html#about" class="nav-link">About Us</a></li>
-                <li><a href="../index.html#contact" class="nav-link">Contact Us</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
                 <li class="nav-dropdown">
-                    <a href="#" class="nav-link dropdown-trigger active">Pages <span class="dropdown-arrow">▼</span></a>
+                    <a href="#" class="nav-link dropdown-trigger active">Programs <span
+                            class="dropdown-arrow">▼</span></a>
                     <ul class="dropdown-menu">
                         <li><a href="drone.html">Drones</a></li>
                         <li><a href="impact.html">Impact</a></li>
@@ -35,11 +35,11 @@
                         <li><a href="event.html" class="active">Event</a></li>
                     </ul>
                 </li>
-
-
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">Contact Us</a></li>
             </ul>
             <div class="nav-buttons">
-                <a href="#" class="btn btn-primary">Book Demo</a>
+                <a href="#" class="btn btn-primary js-open-demo-modal">Book Demo</a>
 
 
                 <!-- <a href="login.html" class="btn btn-secondary">Login</a> -->
@@ -250,6 +250,53 @@
             </div>
         </div>
     </footer>
+
+    <!-- Book Demo Modal -->
+    <div class="modal-overlay" id="bookDemoModal">
+        <div class="modal-container">
+            <button class="modal-close" id="closeBookDemo">&times;</button>
+            <div class="modal-header">
+                <h3>Book a <span class="highlight">Demo</span></h3>
+                <p>Experience the future of robotics education.</p>
+            </div>
+            <form class="modal-form" action="https://formsubmit.co/razaabbascnc@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="New Demo Booking Request!">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" name="name" id="name" required placeholder="John Doe">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" id="email" required placeholder="john@school.com">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" name="phone" id="phone" required placeholder="+91 98765 43210">
+                </div>
+                <div class="form-group">
+                    <label for="school">School / Organization</label>
+                    <input type="text" name="school" id="school" placeholder="St. Mary's High School">
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date">Preferred Date</label>
+                        <input type="date" name="date" id="date">
+                    </div>
+                    <div class="form-group">
+                        <label for="mode">Demo Mode</label>
+                        <select name="mode" id="mode">
+                            <option value="Online">Online</option>
+                            <option value="School Visit">School Visit</option>
+                            <option value="Office Visit">Office Visit</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Submit Request</button>
+            </form>
+        </div>
+    </div>
 
     <script src="../js/main.js"></script>
 </body>
