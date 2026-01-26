@@ -307,7 +307,8 @@
 .industry-card {
     background: var(--white);
     border-radius: 16px;
-    padding: 30px;
+    padding: 0;
+    /* Removed padding for full-width image */
     text-align: center;
     box-shadow: var(--shadow-sm);
     transition: var(--transition);
@@ -328,20 +329,23 @@
     font-weight: 600;
     color: var(--text-color);
     margin-bottom: 10px;
+    padding: 0 20px;
 }
 
 .industry-desc {
     font-size: 14px;
     color: var(--gray);
     line-height: 1.6;
+    padding: 0 20px 30px;
 }
 
 .industry-image {
     width: 100%;
     height: 200px;
-    border-radius: 12px;
+    border-radius: 0;
+    /* Flush edges */
     overflow: hidden;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .industry-image img {
