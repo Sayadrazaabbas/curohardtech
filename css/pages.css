@@ -27,6 +27,14 @@
     background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.95)), url('../images/drone14.jpg') no-repeat center center/cover;
 }
 
+.school-hero {
+    background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.95)), url('../images/school8.png') no-repeat center center/cover;
+}
+
+.learning-page-hero {
+    background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.95)), url('../images/education.jpg') no-repeat center center/cover;
+}
+
 .page-hero::before {
     content: '';
     position: absolute;
@@ -867,4 +875,66 @@
     .event-card {
         flex-direction: column;
     }
+}
+
+/* ===== Contact Form Fixes ===== */
+select#subject {
+    background-color: var(--tech-panel) !important;
+    color: var(--white) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 12px 20px;
+    border-radius: 30px;
+    /* Match input styling if possible, assuming rounded based on theme */
+    width: 100%;
+    cursor: pointer;
+    appearance: none;
+    /* Remove default arrow */
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 15px;
+}
+
+select#subject option {
+    background-color: var(--dark-bg);
+    color: var(--white);
+    padding: 10px;
+}
+
+select#subject:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+/* ===== Contact Grid & Form Sizing ===== */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: stretch;
+    /* Stretch to match heights if possible */
+}
+
+@media (max-width: 992px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.contact-form {
+    padding: 40px;
+    background: var(--tech-panel);
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-md);
+    height: 100%;
+    /* Fill the container height */
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form textarea {
+    min-height: 200px;
+    /* Increase textarea height */
+    resize: vertical;
 }

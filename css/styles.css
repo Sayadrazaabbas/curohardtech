@@ -62,6 +62,16 @@ body {
     overflow-x: hidden;
 }
 
+.highlight {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.text-black {
+    color: black !important;
+    font-weight: 600;
+}
+
 h1,
 h2,
 h3,
@@ -758,12 +768,12 @@ a.btn {
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 15px;
-    color: var(--text-color);
+    color: var(--text-dark);
 }
 
 .feature-description {
     font-size: 15px;
-    color: var(--gray);
+    color: var(--text-dark);
     line-height: 1.7;
 }
 
@@ -930,12 +940,12 @@ a.btn {
     font-size: 28px;
     font-weight: 700;
     margin-bottom: 20px;
-    color: var(--text-color);
+    color: var(--text-dark);
 }
 
 .offering-description {
     font-size: 16px;
-    color: var(--gray);
+    color: var(--text-dark);
     line-height: 1.8;
     margin-bottom: 25px;
 }
@@ -2878,4 +2888,8 @@ a.btn {
     .gallery-grid-full .gallery-item.large img {
         height: 200px;
     }
+}
+
+.cic-desc {
+    color: black !important;
 }

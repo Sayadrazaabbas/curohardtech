@@ -7,7 +7,7 @@ const port = process.env.PORT || 8081;
 
 // Auth0 Configuration (from user request)
 const jwtCheck = auth({
-    audience: 'razaabbascnc@gmail.com',
+    audience: 'bharatrobotcslab@gmail.com',
     issuerBaseURL: 'https://curohardtech.uk.auth0.com/',
     tokenSigningAlg: 'RS256'
 });
